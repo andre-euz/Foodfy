@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header img {
+    width: 90.6px;
+    height: 26.9px;
+}
+
+header {
+    margin: 35px 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #111111;
+    padding: 15px;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FBDFDB;
+    border-radius: 10px;
+}
+
+.banner img {
+    width: 216px;
+    height: 300px;    
+}
