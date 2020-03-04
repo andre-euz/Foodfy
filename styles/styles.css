@@ -5,7 +5,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
-    max-width: 50%;
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -21,17 +21,17 @@ header img {
     margin-right: 100px;    
 }
 
-.links {
+.Links {
     display: inline;   
 }
 
-.links a {
+.Links a {
     margin-left: 35px;
     text-decoration: none;
     color: #111111;    
 }
 
-.banner {
+.Banner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: #FBDFDB;
@@ -41,24 +41,62 @@ header img {
 
 }
 
-.textBanner {
-    margin: 25% 85px;
-
-}
-
-.textBanner h1 {
-    margin-bottom: 20px;
-}
-
-.textBanner p {
-    color: #000000b7;
-    line-height: 28px;
-}
-
-.banner img {
+.Banner img {
     margin-top: 65px;
     margin-left: 200px;
     
     width: 216px;
     height: 300px;        
+}
+
+.TextBanner {
+    margin: 25% 85px;
+
+}
+
+.TextBanner h1 {
+    margin-bottom: 20px;
+}
+
+.TextBanner p {
+    color: #000000b7;
+    line-height: 28px;
+}
+
+/* Most Accessed section */
+.MostAccessed {
+    margin-top: 35px;           
+}
+
+.MostAccessRecipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.MostAccessRecipe img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.MostAccessRecipe h3 {
+    color: #111111f5;
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+}
+
+.MostAccessRecipe p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* About styles */
+
+.AboutFoodfy {
+    margin-top: 15px;
+    line-height: 28px;
+    font-size: 18px;
+    color: #444444;
 }
