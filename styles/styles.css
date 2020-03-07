@@ -7,6 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
     max-width: 950px;
     margin: 0 auto;
+    
 }
 
 header {
@@ -102,23 +103,33 @@ header a,img{
     color: #444444;
 }
 
+
 /* MODAL */
 .Modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 950px;
     width: 100%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
+    bottom: 0;
     opacity: 0;
     visibility: hidden;
+    border-radius: 16px;
+    text-align: center;
 }
 
 .Modal {
     background: white;
-    width: 660px;
-    height: 413px;
+    width: 80%;
+    height: 30%;
     border-radius: 16px;
-    position: fixed;
+    text-align: center;
+    position: relative;
+    margin: 25vh auto;
+   
+ 
 }
 
 /* MODAL ACTIVE */
@@ -127,9 +138,14 @@ header a,img{
     visibility: visible;
 }
 
+
 iframe {
     position: absolute;
-    width: 99.9%;
-    height: 95%;
-    top: 5%;
+    top:5%;
+    right: 5%;
+    left: 0%;
+    bottom: 5%;
+    width: 100%;
+    height: 100%;
+
 }

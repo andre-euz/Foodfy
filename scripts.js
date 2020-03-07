@@ -7,3 +7,8 @@ for (let recipe of recipes) {
         modalOverlay.querySelector("iframe").src = "./modal/modal.html"
     })
 }
+
+document.querySelector(".Close-modal").addEventListener("click",function() {
+    modalOverlay.classList.remove("active");
+    modalOverlay.querySelector("iframe").src = "";
+})
