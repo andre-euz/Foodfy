@@ -8,6 +8,7 @@ body {
     max-width: 950px;
     margin: 0 auto;
     
+    
 }
 
 header {
@@ -20,11 +21,13 @@ header a,img{
     width: 90.6px;
     height: 26.9px;
     text-decoration: none;
+    
 }
 
 .Links {
     display: inline;   
     margin-left: 100px;
+    
 }
 
 .Links a {
@@ -39,7 +42,7 @@ header a,img{
     background: #FBDFDB;
     border-radius: 10px;
     width: 940px;
-    height: 366px;    
+    height: 366px;        
 
 }
 
@@ -73,8 +76,16 @@ header a,img{
 .Recipes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
 }
 
+.Recipe:hover {
+    cursor: pointer;
+    top:-2px;
+    box-shadow:0 2px 2px #666;
+    border-radius: 15px;
+}
 .Recipe img {
     width: 300px;
     height: 140px;
@@ -111,7 +122,7 @@ header a,img{
     max-width: 950px;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     opacity: 0;
@@ -122,8 +133,8 @@ header a,img{
 
 .Modal {
     background: white;
-    width: 80%;
-    height: 30%;
+    width: 660px;
+    height: 413px;
     border-radius: 16px;
     text-align: center;
     position: relative;
@@ -132,6 +143,44 @@ header a,img{
  
 }
 
+.RecipeModal img {
+    /*max-width: 600px;
+    max-height: 200px;*/
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    margin-top: 35px;
+    
+}
+
+.RecipeModal h3 {
+    color: #111111;
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+}
+
+.RecipeModal p {
+    color: #777777;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 60px;
+}
+
+.RecipeModal a {
+    text-decoration: none;
+    color: #999999;
+    font-size: 16px;
+    transition: color 200ms, font-weight 200ms;
+}
+
+.RecipeModal a:hover {
+    color: #666666;
+    font-weight: 550;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 /* MODAL ACTIVE */
 .Modal-overlay.active {
     opacity: 1;
@@ -139,13 +188,3 @@ header a,img{
 }
 
 
-iframe {
-    position: absolute;
-    top:5%;
-    right: 5%;
-    left: 0%;
-    bottom: 5%;
-    width: 100%;
-    height: 100%;
-
-}
