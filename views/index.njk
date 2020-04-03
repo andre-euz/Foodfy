@@ -1,32 +1,33 @@
 {% extends "layout.njk" %}
 {% block content %}
-<div class="Banner">
-    <div class="TextBanner">
-        <h1>As melhores receitas</h1>
-        <p>Aprenda a construir os melhores pratos 
-            com receitas criadas por profissionais do mundo inteiro.</p>
-    </div>          
-    <img src="../images/chef.png" alt="">    
-</div>        
-<section class="MostAccessed">
-    <h1>Mais Acessadas</h1>
-    <div class="Recipes">
-        {% for recipe in recipes %}
-        <div class="Recipe" id="">
-            <img src="{{recipe.image}}" alt="">
-            <h3>{{recipe.title}}</h3>
-            <p>por {{recipe.author}}</p>
-        </div>       
-        {% endfor %} 
-    </div>
-    <div class="Modal-overlay">
-        <div class="Modal">
-            <div class="Modal-content">
-                <div class="RecipeModal">                        
-                </div>                                        
-            </div>                               
+    <div class="Banner">
+        <div class="TextBanner">
+            <h1>As melhores receitas</h1>
+            <p>Aprenda a construir os melhores pratos 
+                com receitas criadas por profissionais do mundo inteiro.</p>
+        </div>          
+        <img class="chef" src="./images/chef.png" alt="Chef Image">    
+    </div>        
+    <section class="MostAccessed">
+        <h1>Mais Acessadas</h1>
+        <div class="Recipes">
+            {% for recipe in recipes %}
+            <div class="Recipe" id="">
+                <img src="{{recipe.image}}" alt="">
+                <h3>{{recipe.title}}</h3>
+                <p>por {{recipe.author}}</p>
+            </div>       
+            {% endfor %} 
         </div>
-    </div>
-</section>
+        <div class="Modal-overlay">
+            <div class="Modal">
+                <div class="Modal-content">
+                    <div class="RecipeModal">                        
+                    </div>                                        
+                </div>                               
+            </div>
+        </div>
+    </section>
+    <script src="/scripts.js"></script>
 {% endblock %}
     
