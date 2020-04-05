@@ -12,21 +12,14 @@
         <h1>Mais Acessadas</h1>
         <div class="Recipes">
             {% for recipe in recipes %}
-            <div class="Recipe" id="">
-                <img src="{{recipe.image}}" alt="">
-                <h3>{{recipe.title}}</h3>
-                <p>por {{recipe.author}}</p>
-            </div>       
+                <div class="Recipe" id="{{recipes.indexOf(recipe)}}">
+                    <img src="{{recipe.image}}" alt="">
+                    <h3>{{recipe.title}}</h3>
+                    <p>por {{recipe.author}}</p>
+                </div>    
             {% endfor %} 
-        </div>
-        <div class="Modal-overlay">
-            <div class="Modal">
-                <div class="Modal-content">
-                    <div class="RecipeModal">                        
-                    </div>                                        
-                </div>                               
-            </div>
-        </div>
+        </div>        
+        
     </section>
     <script src="/scripts.js"></script>
 {% endblock %}

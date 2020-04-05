@@ -22,6 +22,12 @@ server.get("/recipes", function(req, res) {
     return res.render("recipes", { recipes });
 });
 
+server.get("/recipes/:index", function(req, res) {
+    const recipeIndex = req.params.index;
+
+    return res.render("details", { recipe: recipes[recipeIndex] });
+});
+
 server.get("/about", function(req, res) {
     return res.render("about");
 });

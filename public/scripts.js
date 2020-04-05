@@ -4,7 +4,10 @@ const recipeModal = document.querySelector('.RecipeModal');
 
 for (let recipe of recipes) {
     recipe.addEventListener("click",function() {
-        modalOverlay.classList.add("active"); 
+        const recipeId = recipe.getAttribute("id");
+        window.location.href = `/recipes/${recipeId}`;
+    })
+    modalOverlay.classList.add("active"); 
 
         let recipeImg = recipe.querySelector('img').getAttribute('src');        
         let recipeModalImg = document.createElement('img');
@@ -29,7 +32,6 @@ for (let recipe of recipes) {
             modalOverlay.querySelector(".Close-modal").href = "";
         })
         recipeModal.appendChild(closeModal);
-    })
 }
 
 
