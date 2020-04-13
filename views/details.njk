@@ -7,13 +7,17 @@
     </div>    
     <div class="Recipe-details">
         <h2>Ingredientes</h2>
+        <ul>
         {% for ingredients in recipe.ingredients %}
-            <p>{{ingredients}} </p>
+            <li>{{ingredients}}</li>
         {% endfor %}
+        </ul>    
         <h2>Modo de preparo</h2>
-        {% for preparation in recipe.preparation %}
-            <p>{{preparation}} </p>
+        <ul>
+         {% for preparation in recipe.preparation %}
+            <li>{{preparation}} </li>
         {% endfor %}
+        </ul> 
         {% if recipe.information %}
             <h2>Informações adicionais</h2> 
             <p>{{recipe.information}}</p>       

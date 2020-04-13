@@ -2,21 +2,13 @@
 {% block content %}
     <div class="Recipes">
         {% for recipe in recipes %}
-        <div class="Recipe" id="">
+        <div class="Recipe" id="{{recipes.indexOf(recipe)}}">
             <img src="{{recipe.image}}" alt="">
             <h3>{{recipe.title}}</h3>
             <p>por {{recipe.author}}</p>
         </div>       
         {% endfor %} 
-    </div>       
-    <div class="Modal-overlay">
-        <div class="Modal">
-            <div class="Modal-content">
-                <div class="RecipeModal">                        
-                </div>                                        
-            </div>                               
-        </div>
-    </div>
+    </div>           
     
     <script src="./scripts.js"></script> 
 {% endblock %}

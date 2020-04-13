@@ -5,11 +5,11 @@ const recipeModal = document.querySelector('.RecipeModal');
 for (let recipe of recipes) {
     recipe.addEventListener("click",function() {
         const recipeId = recipe.getAttribute("id");
-        window.location.href = `/recipes/${recipeId}`;
+        window.location.href = `/${recipeId}`;
     })
-    modalOverlay.classList.add("active"); 
+    /*modalOverlay.classList.add("active"); 
 
-        let recipeImg = recipe.querySelector('img').getAttribute('src');        
+      /*  let recipeImg = recipe.querySelector('img').getAttribute('src');        
         let recipeModalImg = document.createElement('img');
         recipeModalImg.setAttribute('src',recipeImg);
         recipeModal.appendChild(recipeModalImg);
@@ -31,7 +31,7 @@ for (let recipe of recipes) {
             modalOverlay.classList.remove("active");
             modalOverlay.querySelector(".Close-modal").href = "";
         })
-        recipeModal.appendChild(closeModal);
+        recipeModal.appendChild(closeModal);*/
 }
 
 

@@ -187,4 +187,47 @@ header a,img{
     visibility: visible;
 }
 
+.Recipe-title {
+    text-align: center;
+}
+
+.Recipe-title img {
+    /*max-width: 600px;
+    max-height: 200px;*/
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.Recipe-title h1 {
+    font-size: 36px;
+    color: #111111;    
+}
+.Recipe-title p {
+    font-size: 20px;
+    color: #777777;
+    margin-bottom: 11px;
+    
+}
+
+.Recipe-details h2 { 
+    margin-top: 39px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #111111;
+}
+
+.Recipe-details p, ul {
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.Recipe-details ul, li {
+    position:relative;
+    left: 0.5em;
+}
+
 
