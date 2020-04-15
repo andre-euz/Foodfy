@@ -5,7 +5,7 @@ const recipeModal = document.querySelector('.RecipeModal');
 for (let recipe of recipes) {
     recipe.addEventListener("click",function() {
         const recipeId = recipe.getAttribute("id");
-        window.location.href = `/${recipeId}`;
+        window.location.href = `details/${recipeId}`;
     })
     /*modalOverlay.classList.add("active"); 
 
