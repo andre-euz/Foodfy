@@ -230,4 +230,24 @@ header a,img{
     left: 0.5em;
 }
 
+h2 button {
+    background-color: white;
+    color: #999999;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ingredients, .preparation, .information{
+    transition: all 600ms;
+}
+
+.ingredients.hide, .preparation.hide, .information.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -50px;
+    margin-bottom: 60px;
+}
+
 
